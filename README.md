@@ -1,0 +1,1 @@
+# Diagnosis-of-Schizophrenia-based-on-EEG-signals-using-Spiking-Neural-Networks
