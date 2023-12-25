@@ -60,10 +60,10 @@ def predict(in1, in2):
     X_m = torch.Tensor(data_list_m).reshape((1,3))
 
     model = NetNN()
-    model.load_state_dict(torch.load('erp_training_model'))
+    model.load_state_dict(torch.load('D:\\Documents\\FYP\\trial2(backend)\\Uploads\\erp_training_model'))
     model.eval()
     out = model(X,X_m)
     if out.argmax(dim=1)[0] == 1:
-        return 'Schizophrenic'
+        return print('Schizophrenic')
     else:
-        return 'Non-Schizophrenic'
+        return print('Non-Schizophrenic')
